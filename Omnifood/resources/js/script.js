@@ -76,8 +76,6 @@ $(document).ready(function(){
 		}
 	});
 	
-	
-	ion-close-round
 	/*
 	$('h1').click(function(){
 		$(this).css('background-color', '#ff0000');
@@ -91,6 +89,24 @@ $(document).ready(function(){
 }, {
   offset: '25%'
 })
+
+,
 */	
 	
+	var map = new GMaps({
+	  div: '.map',
+	  lat: 40.7591704,
+	  lng: -73.00,
+	  zoom: 9,	
+	});
+
+	map.addMarker({
+	  lat: 40.7591704,
+	  lng: -74.00,
+	  title: 'New York',
+	  infoWindow: {
+  		content: '<p>Our New York HQ</p>'
+	  	}
+	});
+		
 });
